@@ -16,8 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello wordle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-aa-8EB">
-                                <rect key="frame" x="94" y="59" width="205" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hooray" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-aa-8EB">
+                                <rect key="frame" x="137.66666666666666" y="59" width="118" height="48"/>
+                                <color key="tintColor" red="0.11175727910175937" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,25 +39,17 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Right"/>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UqC-Zj-Sfq">
-                                <rect key="frame" x="30" y="194" width="333" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="d7b-vr-LR1"/>
-                                </constraints>
-                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LNJ-Dw-Xge" firstAttribute="top" secondItem="f7X-aa-8EB" secondAttribute="bottom" constant="32" id="483-eG-zzd"/>
                             <constraint firstItem="ehZ-Vp-sMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="5dZ-Ee-0m8"/>
-                            <constraint firstItem="UqC-Zj-Sfq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B1f-fW-rxd"/>
                             <constraint firstItem="f7X-aa-8EB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kf8-v3-OYl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LNJ-Dw-Xge" secondAttribute="trailing" constant="32" id="Kkd-di-MLZ"/>
-                            <constraint firstItem="UqC-Zj-Sfq" firstAttribute="top" secondItem="f7X-aa-8EB" secondAttribute="bottom" constant="87" id="SnE-aS-0PJ"/>
                             <constraint firstItem="ehZ-Vp-sMn" firstAttribute="top" secondItem="f7X-aa-8EB" secondAttribute="bottom" constant="32" id="fqV-za-rO1"/>
                             <constraint firstItem="f7X-aa-8EB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lHf-fG-LXE"/>
-                            <constraint firstItem="UqC-Zj-Sfq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="wxb-mV-G3m"/>
+                            <constraint firstItem="LNJ-Dw-Xge" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ehZ-Vp-sMn" secondAttribute="trailing" constant="8" symbolic="YES" id="wYN-oc-3Wy"/>
                         </constraints>
                     </view>
                 </viewController>
