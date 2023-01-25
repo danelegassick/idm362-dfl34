@@ -39,12 +39,19 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Right"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7y-It-t86">
+                                <rect key="frame" x="159" y="215" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="P7y-It-t86" firstAttribute="centerX" secondItem="f7X-aa-8EB" secondAttribute="centerX" id="0cT-Cu-n0i"/>
                             <constraint firstItem="LNJ-Dw-Xge" firstAttribute="top" secondItem="f7X-aa-8EB" secondAttribute="bottom" constant="32" id="483-eG-zzd"/>
                             <constraint firstItem="ehZ-Vp-sMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="5dZ-Ee-0m8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P7y-It-t86" secondAttribute="bottom" constant="568" id="9v3-AE-Fhy"/>
                             <constraint firstItem="f7X-aa-8EB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kf8-v3-OYl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LNJ-Dw-Xge" secondAttribute="trailing" constant="32" id="Kkd-di-MLZ"/>
                             <constraint firstItem="ehZ-Vp-sMn" firstAttribute="top" secondItem="f7X-aa-8EB" secondAttribute="bottom" constant="32" id="fqV-za-rO1"/>
