@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,29 +17,144 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello wordle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-aa-8EB">
-                                <rect key="frame" x="94" y="402" width="205" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2kV-xR-ny2">
+                                <rect key="frame" x="16" y="59" width="361" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="0.070000000000000007" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.80000000000000004" green="0.64313725490196072" blue="1" alpha="0.070000000000000007" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <imageReference key="background" image="magnifyingglass" catalog="system" symbolScale="small" renderingMode="hierarchical-single" variableValue="0.0">
+                                    <hierarchicalColors>
+                                        <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color systemColor="secondaryLabelColor"/>
+                                        <color systemColor="tertiaryLabelColor"/>
+                                    </hierarchicalColors>
+                                </imageReference>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Organizers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-d0-j29">
+                                <rect key="frame" x="16" y="109" width="173.33333333333334" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Notes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa0-F0-0qt">
+                                <rect key="frame" x="16" y="205.66666666666666" width="147" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xFw-A9-MMG">
+                                <rect key="frame" x="16" y="149.66666666666666" width="361" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="">
+                                        <imageReference key="image" image="star" catalog="system" symbolScale="medium" renderingMode="hierarchical-single">
+                                            <hierarchicalColors>
+                                                <color red="0.49411764705882355" green="0.57647058823529407" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color systemColor="tertiaryLabelColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </segment>
+                                    <segment title="">
+                                        <imageReference key="image" image="book" catalog="system" symbolScale="medium" renderingMode="hierarchical-single">
+                                            <hierarchicalColors>
+                                                <color red="1" green="0.49411764705882355" blue="0.61568627450980395" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color systemColor="tertiaryLabelColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </segment>
+                                    <segment title="">
+                                        <imageReference key="image" image="list.clipboard" catalog="system" renderingMode="hierarchical-single">
+                                            <hierarchicalColors>
+                                                <color red="0.62745098040000002" green="1" blue="0.4941176471" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color systemColor="tertiaryLabelColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </segment>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" white="1" alpha="0.070000000000000007" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbR-2p-wJ9">
+                                <rect key="frame" x="0.0" y="754" width="393" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="btX-rz-yRX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcv-Sm-eeZ">
+                                <rect key="frame" x="16" y="250" width="361" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="7RJ-Ku-YhR"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="0.59896729324037667" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="You have no notes yet! Start jotting by hitting the plus button!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNH-RB-h5k">
+                                <rect key="frame" x="162" y="723" width="69" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="HPj-Vb-JKh"/>
+                                </constraints>
+                                <color key="tintColor" red="0.80000000000000004" green="0.64313725489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="36"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.80000000000000004" green="0.64313725489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="f7X-aa-8EB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4yd-YO-otw"/>
-                            <constraint firstItem="f7X-aa-8EB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kmq-OU-KPd"/>
+                            <constraint firstItem="kcv-Sm-eeZ" firstAttribute="trailing" secondItem="xFw-A9-MMG" secondAttribute="trailing" id="463-US-JnE"/>
+                            <constraint firstItem="2kV-xR-ny2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="72O-TD-5bz"/>
+                            <constraint firstItem="xFw-A9-MMG" firstAttribute="leading" secondItem="LQc-d0-j29" secondAttribute="leading" id="E9o-fv-A3o"/>
+                            <constraint firstItem="2kV-xR-ny2" firstAttribute="leading" secondItem="LQc-d0-j29" secondAttribute="leading" id="Ipa-lr-ab4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aa0-F0-0qt" secondAttribute="trailing" symbolic="YES" id="JOm-Rg-X7D"/>
+                            <constraint firstItem="xFw-A9-MMG" firstAttribute="trailing" secondItem="2kV-xR-ny2" secondAttribute="trailing" id="NWk-RA-6Jc"/>
+                            <constraint firstItem="kcv-Sm-eeZ" firstAttribute="top" secondItem="aa0-F0-0qt" secondAttribute="bottom" constant="15.333333333333343" id="VKI-UY-O4M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RNH-RB-h5k" secondAttribute="bottom" constant="27" id="Wfh-zY-dbJ"/>
+                            <constraint firstItem="pbR-2p-wJ9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wof-1p-47w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LQc-d0-j29" secondAttribute="trailing" symbolic="YES" id="avz-XC-F1m"/>
+                            <constraint firstItem="2kV-xR-ny2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bq1-5H-RZd"/>
+                            <constraint firstItem="aa0-F0-0qt" firstAttribute="leading" secondItem="xFw-A9-MMG" secondAttribute="leading" id="iXM-Tz-yCb"/>
+                            <constraint firstItem="LQc-d0-j29" firstAttribute="top" secondItem="2kV-xR-ny2" secondAttribute="bottom" constant="16" id="ibZ-9Z-LAp"/>
+                            <constraint firstItem="pbR-2p-wJ9" firstAttribute="centerX" secondItem="kcv-Sm-eeZ" secondAttribute="centerX" id="kQu-rx-6yZ"/>
+                            <constraint firstItem="xFw-A9-MMG" firstAttribute="top" secondItem="LQc-d0-j29" secondAttribute="bottom" constant="12" id="kVa-tf-ceF"/>
+                            <constraint firstItem="2kV-xR-ny2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lbJ-1Y-B9i"/>
+                            <constraint firstItem="RNH-RB-h5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="oko-0p-PSx"/>
+                            <constraint firstItem="aa0-F0-0qt" firstAttribute="top" secondItem="xFw-A9-MMG" secondAttribute="bottom" constant="25" id="r5q-4Z-uRA"/>
+                            <constraint firstItem="kcv-Sm-eeZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aa0-F0-0qt" secondAttribute="leading" id="tbB-lp-XDe"/>
+                            <constraint firstItem="RNH-RB-h5k" firstAttribute="centerX" secondItem="pbR-2p-wJ9" secondAttribute="centerX" id="z2p-CC-ha6"/>
+                            <constraint firstAttribute="bottom" secondItem="pbR-2p-wJ9" secondAttribute="bottom" id="zDk-4L-K4X"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="-2"/>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="list.clipboard" catalog="system" width="103" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
