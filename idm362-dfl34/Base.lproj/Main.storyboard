@@ -101,7 +101,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNH-RB-h5k">
                                 <rect key="frame" x="162" y="723" width="69" height="68"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="RNH-RB-h5k" secondAttribute="height" multiplier="69:68" id="GXU-pv-gEv"/>
                                     <constraint firstAttribute="height" constant="68" id="HPj-Vb-JKh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="PwF-dJ-fMn"/>
                                 </constraints>
                                 <color key="tintColor" red="0.80000000000000004" green="0.64313725489999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -134,7 +136,7 @@
                             <constraint firstItem="2kV-xR-ny2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lbJ-1Y-B9i"/>
                             <constraint firstItem="RNH-RB-h5k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="oko-0p-PSx"/>
                             <constraint firstItem="aa0-F0-0qt" firstAttribute="top" secondItem="xFw-A9-MMG" secondAttribute="bottom" constant="25" id="r5q-4Z-uRA"/>
-                            <constraint firstItem="kcv-Sm-eeZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aa0-F0-0qt" secondAttribute="leading" id="tbB-lp-XDe"/>
+                            <constraint firstItem="kcv-Sm-eeZ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="aa0-F0-0qt" secondAttribute="leading" id="tbB-lp-XDe"/>
                             <constraint firstItem="RNH-RB-h5k" firstAttribute="centerX" secondItem="pbR-2p-wJ9" secondAttribute="centerX" id="z2p-CC-ha6"/>
                             <constraint firstAttribute="bottom" secondItem="pbR-2p-wJ9" secondAttribute="bottom" id="zDk-4L-K4X"/>
                         </constraints>
